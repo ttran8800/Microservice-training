@@ -1,0 +1,17 @@
+
+spring:
+  application:
+    name: API-GATEWAY
+  config:
+    import: "optional:configserver:http://localhost:9000"
+  cloud:
+    gateway:
+      routes:
+        - id: EMPLOYEE-SERVICE
+          uri: lb://EMPLOYEE-SERVICE
+          predicates:
+            - Path=/api/v1/employees/**
+        - id: DEPARTMENT-SERVICE
+          uri: lb://DEPARTMENT-SERVICE
+          predicates:
+            - Path=/api/v1/departments/**
