@@ -1,16 +1,16 @@
 server:
   port: 9191
 
-
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
+#not needed when using annotation in main class
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
 #   not needed
 #    service-url:
 #      defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
+#  instance:
+#    hostname: localhost
 
 management:
   tracing:

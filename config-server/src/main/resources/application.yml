@@ -10,13 +10,13 @@ spring:
 #  zipkin:
 #    base-url: http://localhost:9411/zipkin/
 
-
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
+#not needed when using annotation in main class
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
 # not needed
 #    service-url:
 #      defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
+#  instance:
+#    hostname: localhost

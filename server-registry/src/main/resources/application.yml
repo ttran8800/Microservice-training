@@ -1,7 +1,8 @@
 server:
   port: 8761
 
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
+#not required when using annotation in main class
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
